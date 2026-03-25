@@ -1,116 +1,63 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Superando o Medo de Falar Inglês | Método Exclusivo</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔓</text></svg>">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="logo-text">SUPERANDO O MEDO DE FALAR<strong>INGLÊS</strong></div>
-      <nav>
-        <ul>
-          <li><a href="#home">Início</a></li>
-          <li><a href="#beneficios">Benefícios</a></li>
-          <li><a href="#mentoria">Mentoria</a></li>
-          <li><a href="#ebook">E-book</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+:root {
+  --primary: #FFD700;
+  --bg-gradient: linear-gradient(135deg, #0b0a1a 0%, #1c134d 100%);
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --text-light: #ffffff;
+  --text-dark: #000000;
+}
 
-  <section id="home">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <span class="badge">PROMOÇÃO DE LANÇAMENTO</span>
-        <h1>Pare de travar no inglês: fale com confiança de uma vez por todas!</h1>
-        <p>Você já ficou travado quando precisava falar? Sentiu vergonha ou medo de errar? Você não está sozinho e estou aqui para te ajudar a vencer isso.</p>
-        <a href="#ebook" class="btn-primary">QUERO SER FLUENTE!</a>
-      </div>
-      <div class="hero-image">
-        <img src="banner-franco.jpg" alt="Franco - Superando o Medo Inglês">
-      </div>
-    </div>
-  </section>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; scroll-behavior: smooth; }
 
-  <section id="problemas" class="bg-dark">
-    <div class="container">
-      <h2 class="section-title">Isso acontece com você?</h2>
-      <div class="grid-check">
-        <div class="check-item">❌ Você já estudou inglês por anos, mas trava quando precisa falar?</div>
-        <div class="check-item">❌ Sente vergonha de errar?</div>
-        <div class="check-item">❌ Perdeu oportunidades no trabalho por falta de fluência?</div>
-      </div>
-    </div>
-  </section>
+body { background: var(--bg-gradient); color: var(--text-light); line-height: 1.6; background-attachment: fixed; }
 
-  <section id="beneficios">
-    <div class="container">
-      <h2 class="section-title">O que você vai conquistar</h2>
-      <div class="grid-cards">
-        <div class="card">✅ Supere o medo com técnicas práticas para qualquer nível.</div>
-        <div class="card">✅ Ganhe confiança para entrevistas, reuniões e viagens.</div>
-        <div class="card">✅ Organize sua rotina com o Planner Exclusivo.</div>
-        <div class="card">✅ Crie um hábito de estudo leve, sem regras chatas.</div>
-        <div class="card">✅ Abra portas para networking internacional.</div>
-        <div class="card">✅ Aprenda com situações reais, sem frases decoradas.</div>
-      </div>
-    </div>
-  </section>
+.container { width: 90%; max-width: 1100px; margin: 0 auto; }
 
-  <section id="sobre">
-    <div class="container sobre-grid">
-      <div class="sobre-img-container">
-        <img src="banner-franco.jpg" alt="Franco Leone Antunes" class="img-autor">
-      </div>
-      <div class="sobre-text">
-        <h2>SOBRE O AUTOR:</h2>
-        <p>“MEU NOME É FRANCO LEONE ANTUNES E, POR MUITO TEMPO, VIVI A MESMA ANGÚSTIA QUE TALVEZ VOCÊ ESTEJA VIVENDO AGORA. EU ESTUDAVA, SABIA AS PALAVRAS, ENTENDIA BEM... MAS QUANDO CHEGAVA A HORA DE FALAR, PARECIA QUE TUDO TRAVAVA.”</p>
-        <p>“HOJE, QUERO QUE VOCÊ SINTA A MESMA LIBERTAÇÃO QUE EU SENTI: A DE PERCEBER QUE FALAR INGLÊS É POSSÍVEL PARA QUALQUER PESSOA, INCLUSIVE PARA VOCÊ.”</p>
-      </div>
-    </div>
-  </section>
+header { padding: 15px 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(255,215,0,0.2); }
+header .container { display: flex; justify-content: space-between; align-items: center; }
+.logo-text { font-size: 1rem; font-weight: bold; }
+.logo-text strong { color: var(--primary); margin-left: 5px; }
 
-  <section id="mentoria" class="mentoria-box">
-    <div class="container">
-        <div class="mentoria-content">
-            <span class="highlight">💬 MENTORIA EXCLUSIVA</span>
-            <h2>Superando o Medo de Falar Inglês</h2>
-            <div class="preco-tag">Apenas R$ 199,99</div>
-            <a href="https://hotmart.com/pt-br/marketplace/produtos/consultoria-superando-o-medo-de-falar-ingles/E101495128T" class="btn-mentoria" target="_blank">QUERO A MENTORIA!</a>
-        </div>
-    </div>
-  </section>
+/* Ajuste do Menu - REMOVE O AZUL */
+nav ul { display: flex; list-style: none; gap: 20px; }
+nav ul li a { color: #ffffff !important; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: 0.3s; }
+nav ul li a:hover { color: var(--primary) !important; }
 
-  <section id="ebook">
-    <div class="container ia-grid">
-      <div class="ia-image">
-        <img src="ia-ebook.jpg" alt="Ebook Superando o Medo">
-      </div>
-      <div class="ia-text">
-        <span class="badge">OFERTA ESPECIAL</span>
-        <h2>Guia Prático + AI English Coach</h2>
-        <div class="preco-container">
-            <span class="preco-de">De R$ 29,90 por</span>
-            <span class="preco-por">R$ 4,99</span>
-        </div>
-        <a href="https://hotmart.com/pt-br/marketplace/produtos/desbloqueie-sua-fluencia-em-ingles-guia-pratico-para-superar-o-medo-de-falar/B101420411U" class="btn-buy" target="_blank">COMPRAR AGORA!</a>
-      </div>
-    </div>
-  </section>
+.section-title { text-align: center; margin-bottom: 30px; font-size: 1.8rem; color: var(--primary); font-weight: 800; }
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Superando o Medo Inglês. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+/* Hero & Grids */
+.hero-grid, .ia-grid, .sobre-grid { display: grid; grid-template-columns: 1fr; text-align: center; padding: 40px 0; gap: 30px; }
+.hero-text h1 { font-size: 2.2rem; line-height: 1.1; margin: 15px 0; font-weight: 900; }
+.hero-image img, .ia-image img { width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
 
-  <a href="https://wa.me/5519981287313" class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  </a>
-</body>
-</html>
+/* Sobre o Autor */
+#sobre { background: #d1d1d1; color: var(--text-dark); padding: 60px 0; }
+.img-autor { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 4px solid #fff; margin: 0 auto; display: block; }
+.sobre-text p { font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; }
+
+/* Mentoria & Ebook */
+.mentoria-box { border: 2px solid var(--primary); border-radius: 25px; padding: 30px; margin: 20px 0; text-align: center; }
+.preco-tag, .preco-por { font-size: 2.5rem; font-weight: 900; color: var(--primary); margin: 10px 0; }
+
+/* Botões */
+.btn-primary, .btn-buy, .btn-mentoria { 
+  width: 100%; background: var(--primary); color: #000; padding: 18px; 
+  text-decoration: none; font-weight: 900; border-radius: 12px; display: block; 
+}
+.btn-mentoria { background: #fff; }
+
+/* WhatsApp */
+.whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 1001; }
+.whatsapp-float img { width: 35px; }
+
+/* Desktop */
+@media (min-width: 850px) {
+  .hero-grid, .ia-grid, .sobre-grid { grid-template-columns: 1fr 1fr; text-align: left; }
+  .btn-primary, .btn-buy, .btn-mentoria { width: auto; display: inline-block; padding: 15px 40px; }
+  .img-autor { width: 300px; height: 300px; margin: 0; }
+}
+
+/* Mobile: Esconde nav para limpar */
+@media (max-width: 849px) {
+  nav { display: none; }
+  header .container { justify-content: center; }
+}
