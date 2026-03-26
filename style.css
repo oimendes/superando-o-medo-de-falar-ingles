@@ -79,6 +79,9 @@ section { padding: 60px 0; }
 .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 1001; }
 .whatsapp-float img { width: 30px; }
 
+/* NOVO: RODAPÉ CENTRALIZADO */
+footer { padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
+
 /* DESKTOP MEDIA QUERY (AJUSTADO) */
 @media (min-width: 850px) {
   .hero-grid, .ia-grid, .sobre-grid { grid-template-columns: 1fr 1fr; text-align: left; }
@@ -92,4 +95,7 @@ section { padding: 60px 0; }
 @media (max-width: 849px) {
   nav { display: none; }
   header .container { justify-content: center; }
+  /* AJUSTE DOS VALORES NO CELULAR */
+  .preco-tag { font-size: 2rem !important; }
+  .preco-por { font-size: 2.5rem !important; }
 }
