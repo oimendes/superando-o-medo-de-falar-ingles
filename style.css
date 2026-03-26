@@ -1,95 +1,207 @@
-:root {
-  --primary: #FFD700;
-  --bg-gradient: linear-gradient(135deg, #0b0a1a 0%, #1c134d 100%);
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --text-light: #ffffff;
-  --text-dark: #000000;
+/* Configurações Gerais - VOLTANDO PARA SUAS CORES ORIGINAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; scroll-behavior: smooth; }
-
-body { background: var(--bg-gradient); color: var(--text-light); line-height: 1.6; background-attachment: fixed; }
-
-.container { width: 90%; max-width: 1100px; margin: 0 auto; }
-
-/* HEADER CORRIGIDO */
-header { padding: 15px 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(255,215,0,0.2); }
-header .container { display: flex; justify-content: space-between; align-items: center; }
-
-.logo-text { font-size: 1rem; font-weight: bold; }
-.logo-text strong { color: var(--primary); margin-left: 5px; }
-
-/* MENU CORRIGIDO (REMOVE O AZUL E ALINHA) */
-nav ul { display: flex; list-style: none; gap: 20px; }
-nav ul li a { 
-  color: #ffffff !important; 
-  text-decoration: none !important; 
-  font-size: 0.9rem; 
-  font-weight: 500; 
-  transition: 0.3s; 
+body {
+    background-color: #0d0d2b; /* Seu roxo escuro original */
+    color: white;
+    line-height: 1.6;
 }
-nav ul li a:hover { color: var(--primary) !important; }
 
-.section-title { text-align: center; margin-bottom: 30px; font-size: 1.8rem; color: var(--primary); font-weight: 800; }
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-weight: bold;
+    color: white;
+}
+
+.logo-text strong {
+    color: #ffd700; /* Seu amarelo original */
+    margin-left: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #3366ff; /* Seus links azuis originais */
+    text-decoration: underline;
+}
 
 /* Hero Section */
-.hero-grid { display: grid; grid-template-columns: 1fr; text-align: center; padding: 40px 0; gap: 30px; }
-.hero-text h1 { font-size: 2.2rem; line-height: 1.1; margin: 15px 0; font-weight: 900; }
-.hero-text p { font-size: 1.1rem; opacity: 0.9; }
-.badge { border: 1px solid var(--primary); color: var(--primary); padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; }
-.hero-image img { width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    padding: 80px 0;
+}
 
-/* Problemas */
-.bg-dark { background: rgba(0,0,0,0.4); padding: 50px 0; }
-.grid-check { display: flex; flex-direction: column; gap: 12px; }
-.check-item { background: rgba(255,77,77,0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #ff4d4d; font-size: 0.95rem; }
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.badge {
+    border: 1px solid #ffd700;
+    color: #ffd700;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+/* Botões Amarelos Originais */
+.btn-primary, .btn-buy {
+    background-color: #ffd700;
+    color: #000;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+/* Seção Problemas */
+.bg-dark {
+    background-color: #050510;
+    padding: 60px 0;
+}
+
+.grid-check {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
 
 /* Benefícios */
-section { padding: 60px 0; }
-.grid-cards { display: grid; grid-template-columns: 1fr; gap: 15px; }
-.card { background: var(--card-bg); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); font-size: 1rem; }
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.card {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+}
 
 /* Sobre o Autor */
-#sobre { background: #d1d1d1; color: var(--text-dark); padding: 60px 0; }
-.sobre-grid { display: grid; grid-template-columns: 1fr; gap: 30px; text-align: center; }
-.img-autor { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; box-shadow: 0 8px 20px rgba(0,0,0,0.2); border: 4px solid #fff; margin: 0 auto; }
-.sobre-text h2 { font-size: 1.8rem; margin-bottom: 15px; }
-.sobre-text p { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; line-height: 1.5; margin-bottom: 15px; text-align: center; }
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.img-autor {
+    width: 100%;
+    border-radius: 10px;
+}
 
 /* Mentoria */
-.mentoria-box { border: 2px solid var(--primary); border-radius: 25px; margin: 20px 0; background: rgba(255, 215, 0, 0.03); }
-.mentoria-content { padding: 30px 20px; text-align: center; }
-.mentoria-list { list-style: none; margin: 20px 0; text-align: left; font-size: 0.95rem; }
-.preco-tag { font-size: 2.5rem; font-weight: 900; color: var(--primary); margin: 15px 0; }
-
-/* Ebook IA */
-.ia-grid { display: grid; grid-template-columns: 1fr; gap: 30px; text-align: center; }
-.ia-image img { width: 100%; border-radius: 15px; }
-.preco-por { font-size: 3rem; font-weight: 900; color: var(--primary); }
-
-/* Botões Estilo Mobile */
-.btn-primary, .btn-buy, .btn-mentoria { 
-  width: 100%; background: var(--primary); color: #000; padding: 18px; 
-  text-decoration: none; font-weight: 900; border-radius: 12px; display: block; 
-  font-size: 1.1rem; text-transform: uppercase;
-}
-.btn-mentoria { background: #fff; }
-
-/* Floating Elements */
-.whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 1001; }
-.whatsapp-float img { width: 30px; }
-
-/* DESKTOP MEDIA QUERY (AJUSTADO) */
-@media (min-width: 850px) {
-  .hero-grid, .ia-grid, .sobre-grid { grid-template-columns: 1fr 1fr; text-align: left; }
-  nav { display: block; }
-  .btn-primary, .btn-buy, .btn-mentoria { width: auto; display: inline-block; padding: 15px 40px; }
-  .img-autor { width: 300px; height: 300px; margin: 0; }
-  .sobre-text p { text-align: justify; }
+.mentoria-box {
+    padding: 60px 0;
+    text-align: center;
 }
 
-/* MOBILE ESPECÍFICO */
-@media (max-width: 849px) {
-  nav { display: none; }
-  header .container { justify-content: center; }
+.mentoria-content {
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.btn-mentoria {
+    background-color: #fff;
+    color: #000;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* --- AJUSTE DOS VALORES (O QUE VOCÊ PEDIU) --- */
+.preco-tag {
+    font-size: 3.5rem; /* Tamanho no notebook */
+    font-weight: bold;
+    color: #ffd700;
+    margin: 20px 0;
+}
+
+.preco-por {
+    font-size: 4rem; /* Tamanho no notebook */
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* --- AJUSTE DO RODAPÉ (O QUE VOCÊ PEDIU) --- */
+footer {
+    padding: 40px 0;
+    text-align: center; /* Perfeitamente centralizado */
+    border-top: 1px solid #333;
+}
+
+/* WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 60px;
+}
+
+/* --- RESPONSIVIDADE (PARA NÃO DESALINHAR NO CELULAR) --- */
+@media (max-width: 768px) {
+    nav { display: none; }
+    
+    .hero-grid, .sobre-grid, .ia-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* Diminuindo os números apenas no celular para não quebrar o layout */
+    .preco-tag {
+        font-size: 2.2rem; 
+    }
+    
+    .preco-por {
+        font-size: 2.8rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
 }
